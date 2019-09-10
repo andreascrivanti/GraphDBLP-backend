@@ -33,4 +33,4 @@ You can check the application log using the command:
 
 	sudo docker logs graphdblp-backend-container
 	
-Now the API should be running; test on browser the link `[http://localhost:8081/graphdblp/meta/](http://localhost:8081/graphdblp/meta/)`
+Now the API should be running; test on browser the link [http://localhost:8081/graphdblp/meta/](http://localhost:8081/graphdblp/meta/)
