@@ -1,6 +1,6 @@
-# GraphDBLP backend
-The backend expose API to perform autocomplete feature in the UI. It consists in a Spring application that runs into Docker.
-The backend uses a mongoDB instance, provided as a docker; the application itself load automatically the data into the database.
+# What is GraphDBLP-backend?
+**GraphDBLP-backend** exposes API to perform autocomplete feature in the [GraphDBLP-frontend](https://github.com/andreascrivanti/GraphDBLP-frontend). It consists in a Spring Boot application that runs into a Docker container.
+It uses a mongoDB instance, provided as a Docker container; data will be loaded automatically by the application.
 
 # Run the container
 
@@ -14,7 +14,6 @@ Create and run the mongoDB container, then the graphdblp-backend container:
 # Compile and deploy on your machine
 If you want to modify the source code and deploy it on your machine, you need:
 
-Requirements:
 1. UNIX system
 1. Docker installed on your machine
 1. OpenJDK installed on your machine
@@ -28,7 +27,7 @@ Now remove (if already exists), create and launch the container:
 	sudo docker rm -f graphdblp-backend-container
 	sudo docker run -it --name graphdblp-backend-container -p 8081:8081 --link=mongodb -d graphdblp-backend
 	
-The application will be upper running in about 5 minutes.
+The application will be ready and running in about 5 minutes.
 You can check the application log using the command:
 
 	sudo docker logs graphdblp-backend-container
